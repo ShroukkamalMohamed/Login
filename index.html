@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================================Title=================================== -->
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
+    <!-- ?==============================fonts====================================? -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- ^======================fontAsesome===================================== -->
+    <link rel="stylesheet" href="Css/all.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- *========================favicon=======================================* -->
+    <link rel="shortcut icon" href="Images/.png" type="image/x-icon" />
+    <!-- !=================BootStarp(css)======================================= -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/fonts.css" />
+    <!-- &======================style===========================================& -->
+    <link rel="stylesheet" href="Css/mediaqueries.css" />
+    <link rel="stylesheet" href="Css/Animation.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <!-- ======================================================================= -->
+  </head>
+  <body>
+    <div class="container m-auto">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" id="logintab">
+          <a class="nav-link" data-bs-toggle="tab" href="#login">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#signup"
+            >Sign Up</a
+          >
+        </li>
+      </ul>
+
+      <div class="tab-content shadow-lg p-4">
+        <div id="login" class="container tab-pane fade">
+          <br />
+          <h3 class="text-center">Log In</h3>
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                />
+              </div>
+
+              <button type="button" class="btn btn-black float-end" id="loginbtn">
+                Log In
+              </button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+        <div id="signup" class="container tab-pane active">
+          <br />
+          <h3 class="text-center">Sign up</h3>
+          <form>
+            <div class="mb-3">
+              <label for="signupName" class="form-label">Name</label>
+              <input
+                type="email"
+                class="form-control"
+                id="signupName"
+                aria-describedby="emailHelp"
+                placeholder="Please Enter Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="signupEmail"
+                aria-describedby="emailHelp"
+                placeholder="Please Enter Your Email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="sigunPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="sigunPassword"
+                placeholder="Please Enter Your Password"
+              />
+            </div>
+
+            <button type="button" class="btn btn-black float-end" id="signupbtn">
+              Sign Up
+            </button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ?=======Script(js)================== -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/site.js" type="text/javascript" defer></script>
+    <!--? ===================================== -->
+  </body>
+</html>
