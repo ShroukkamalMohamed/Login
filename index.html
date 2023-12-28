@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ================================Title=================================== -->
-    <title>Bookmark</title>
+    <title>Log In</title>
     <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
     <!-- ?==============================fonts====================================? -->
     <link
@@ -41,6 +41,18 @@
   </head>
   <body>
     <div class="container m-auto">
+      <div
+        class="alert alert-danger d-none w-25 m-auto text-center"
+        id="warningNotify"
+        role="alert"
+      >
+       </div>
+      <div
+        class="alert alert-success d-none w-25 m-auto text-center"
+        id="successNotify"
+        role="alert"
+      >
+       </div>
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" id="logintab">
           <a class="nav-link" data-bs-toggle="tab" href="#login">Log In</a>
@@ -76,7 +88,11 @@
                 />
               </div>
 
-              <button type="button" class="btn btn-black float-end" id="loginbtn">
+              <button
+                type="button"
+                class="btn btn-black float-end"
+                id="loginbtn"
+              >
                 Log In
               </button>
               <div class="clearfix"></div>
@@ -90,13 +106,14 @@
             <div class="mb-3">
               <label for="signupName" class="form-label">Name</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="signupName"
-                aria-describedby="emailHelp"
                 placeholder="Please Enter Your Name"
                 required
               />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
               <label for="signupEmail" class="form-label">Email address</label>
@@ -106,7 +123,10 @@
                 id="signupEmail"
                 aria-describedby="emailHelp"
                 placeholder="Please Enter Your Email"
+                required
               />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please Enter Valid Email.</div>
             </div>
             <div class="mb-3">
               <label for="sigunPassword" class="form-label">Password</label>
@@ -115,10 +135,17 @@
                 class="form-control"
                 id="sigunPassword"
                 placeholder="Please Enter Your Password"
+                required
               />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
-            <button type="button" class="btn btn-black float-end" id="signupbtn">
+            <button
+              type="button"
+              class="btn btn-black float-end"
+              id="signupbtn"
+            >
               Sign Up
             </button>
             <div class="clearfix"></div>
@@ -126,6 +153,7 @@
         </div>
       </div>
     </div>
+
     <!-- ?=======Script(js)================== -->
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/site.js" type="text/javascript" defer></script>
