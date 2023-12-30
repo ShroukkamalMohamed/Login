@@ -1,0 +1,3 @@
+body{font-family:'EB Garamond',serif;position:relative; overflow: hidden;}
+#Wellcome{background-image:url(../images/simple-aesthetic-background.jpg);background-size:cover;background-position:center;width:100%;height: 100vh;display:flex;align-items:center;justify-content:center;color:#fff}
+.main{text-shadow:2px 2px 8px gray;color:brown;padding:20px;display:flex;align-items:center;justify-content:center;font-size:35px}

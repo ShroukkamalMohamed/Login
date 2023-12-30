@@ -1,7 +1,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
-body{background-color:#f7ecde;font-family:Montserrat,sans-serif;position:relative}
+body{background-image:url(../images/simple-aesthetic-background.jpg);background-size:cover;background-position:center;height: 100vh;font-family: 'EB Garamond', serif;
+    position:relative; overflow: hidden;}
 .nav-tabs{border-bottom:1px solid #dee2e6;display:flex;justify-content:center;align-items:center;border:none;margin-top:100px}
-.nav-tabs a{color:#fff;background-color:#000!important;font-weight:600}
+.nav-tabs a{color:#000;background-color:#faebd7!important;font-weight:600}
 .nav-link{border-radius:20px 20px 0 0!important;border-bottom:1px solid #d3d3d3}
 .nav-tabs .nav-link.active{color:#000;background-color:#fff!important}
 .nav-tabs .nav-link:hover{color:gray!important}
@@ -11,4 +12,3 @@ input{border-radius:20px!important}
 label{font-weight:600;font-family:Montserrat,sans-serif}
 .btn-black{background-color:#000!important;color:#fff;padding-inline:100px}
 .btn-black:hover{background-color:#fff!important;color:#000;border:1px solid #000}
-#Wellcome{background-image:url(../images/kid.jpg);background-size:cover;background-position:center;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;color: #fff;}

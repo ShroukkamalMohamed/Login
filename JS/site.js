@@ -21,7 +21,7 @@ function getLocalStorage() {
     return JSON.parse(localStorage.getItem("userData"));
 }
 function emailValidation() {
-    var regex = /^([a-z])+@[a-z]+\.com$/
+    var regex = /^([A-Z]|[a-z]){1,}@([A-Z]|[a-z]){1,}\.com$/
     return regex.test(signupEmail.value);
 }
 function inputValidations() {
@@ -77,7 +77,6 @@ function removeNotification() {
     successNotify.classList.remove("d-flex");
     successNotify.classList.add("d-none");
 }
-
 // *======================>>>Events=====================================
 signupbtn.addEventListener("click", function () {
     if (inputValidations() && emailValidation()) {
@@ -104,7 +103,7 @@ loginbtn.addEventListener("click", function () {
         else {
             removeNotification();
             if (checkIFUserExist.password == loginPassword.value) {
-                window.location.href = "../Pages/wellcomePage.html";
+                window.location.href = `../Pages/wellcomePage.html?userName=${checkIFUserExist.userName}`;
                 clearInputs();
                 alterMassage(successNotify, "log In Succesfully");
 
