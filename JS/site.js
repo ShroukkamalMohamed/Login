@@ -10,9 +10,7 @@ var warningNotify = document.getElementById("warningNotify");
 var successNotify = document.getElementById("successNotify");
 // ~===================>>>>>Variables<<<<<<<============================
 var userData = [];
-setTimeout(function () {
-    bootstrap.Alert.getOrCreateInstance(document.querySelector("#successNotify")).close();
-}, 15000)
+
 // ^===================>>>>>Functions<<<<<<<============================
 function setLocalStorage() {
     localStorage.setItem("userData", JSON.stringify(userData))
@@ -103,7 +101,8 @@ loginbtn.addEventListener("click", function () {
         else {
             removeNotification();
             if (checkIFUserExist.password == loginPassword.value) {
-                window.location.href = `/Pages/wellcomePage.html?userName=${checkIFUserExist.userName}`;
+                var path = `/Pages/wellcomePage.html?userName=${checkIFUserExist.userName}`
+                window.location.href = 'http://' + window.location.host + path;;
                 clearInputs();
                 alterMassage(successNotify, "log In Succesfully");
 
