@@ -102,7 +102,7 @@ loginbtn.addEventListener("click", function () {
             removeNotification();
             if (checkIFUserExist.password == loginPassword.value) {
                 var path = `/Pages/wellcomePage.html?userName=${checkIFUserExist.userName}`
-                window.location.href = 'http://' + window.location.host + path;;
+                window.location.href =  window.location.href + path;;
                 clearInputs();
                 alterMassage(successNotify, "log In Succesfully");
 
